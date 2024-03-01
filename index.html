@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Massage Bien-être</title>
+
+    <!-- Change la photo de l'onglet du site-->
+    <link rel="icon" href="images/Logo_Karine.png" type="images/x-icon">
+
+
+    <!-- style, font, icon par cdn -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Local Style sheet-->
+
+    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/avis.css">
+    <link rel="stylesheet" href="/styles/load_screen.css">
+
+    <!-- Cdn script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Local script-->
+    <script src="/scripts/main.js" defer></script>
+
+    <script src="/scripts/box.js" defer></script>
+    <script src="/scripts/avis.js" defer></script>
+    <script src="/scripts/load_screen.js" defer></script>
+
+
+
+
+</head>
+
+<body>
+
+    <!---------------------------------------- Loading screen -------------------------------------------------------->
+
+    <div class="body-loading">
+        <div class="load-img">
+            <img src="images/Logo_Karine.png" alt="logo">
+        </div>
+        <div class="loading">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    <!---------------------------------------- Fin Loading screen -------------------------------------------------------->
+
+    <header id="header">
+        <a class="nav-brand" href="index.html">
+            <img id="header-img" src="/images/Logo_Sans_texte.png" alt="logo">
+        </a>
+
+        <!-- Menu for Mobile -->
+
+        <input type="checkbox" id="toggle-menu" role="button" aria-pressed="true">
+        <label for="toggle-menu" class="toggle-menu">Menu</label>
+
+        <!--  Menus  -->
+        <nav id="nav-bar" class="navbar">
+            <ul class="menu">
+                <!--<li><a class="nav-link" href="who.html">Qui suis-je</a></li>-->
+                <li><a class="nav-link" href="massage.html">Massage</a>
+                    <ul class="submenu">
+                        <li><a href="perso.html">Personnalisé</a></li>
+                        <li><a href="suedoi.html">Suédois</a></li>
+                        <li><a href="californien.html">Californien</a></li>
+                        <li><a href="hawaien.html">Hawaïen "Lomi Lomi"</a></li>
+                        <li><a href="ayu.html">Ayurvédique "Abhyanga"</a></li>
+                        <li><a href="pierre.html">Aux pierres chaudes</a></li>
+                        <li><a href="visage.html">Visage</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="nav-link" href="autre.html">Autre massage</a>
+                    <ul class="submenu">
+                        <li><a href="sonores.html">Sonores</a></li>
+                        <li><a href="reflexologie.html">Réflexologie faciale</a></li>
+                        <li><a href="pressotherapie.html">Pressothérapie</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link" href="salon.html">Mon salon</a></li>
+                <li><a class="nav-link" href="tarif.html">Tarifs</a></li>
+                <li><a class="nav-link" href="contact.html">Contact / plan</a></li>
+                <li><i class="fa-solid fa-phone"></i> 06 60 84 11 47
+                </li>
+            </ul>
+
+            <!-- Si changement de compte fb, insta, linkedin changer les liens dans les href -->
+            <ul class="social-menu">
+                <li>
+                    <a href="https://www.facebook.com/MassagesByKarine/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0"><i class="fab fa-facebook-f">
+                </i></a>
+                </li>
+                <li><a href="https://www.instagram.com/karine_massage_cabourg?igsh=M3IzMWtzeTdhOXAz"><i class="fab fa-instagram">
+                </i></a></li>
+                <li><a href="https://www.linkedin.com/in/karine-maitre-p%C3%A9tr%C3%A9-1288602b7/"><i class="fab fa-linkedin">
+                </i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!---------------------------------------- Fin Nav bar -------------------------------------------------------->
+
+    <!---------------------------------------- Page logo / decouvrir ---------------------------------------------->
+    <div class="hero">
+        <div class="hero-img">
+            <img src="images/Logo_Karine.png" alt="Massage-Cabourg">
+        </div>
+        <div class="hero-text">
+            <a href="#me" class="btn">Découvir</a>
+        </div>
+    </div>
+
+    <!---------------------------------------- Fin Page logo / decouvrir ---------------------------------------------->
+
+    <!---------------------------------------- Qui suis-je ? ---------------------------------------------------------->
+
+    <section id="me">
+        <div class="title title-left">
+            <span class="line"></span>
+            <h3>La Cabourgeaise aux mains d'or </h3>
+            <span class="material-symbols-outlined">spa</span>
+        </div>
+        <div class="wrapper">
+            <div class="image animation_img">
+                <!-- Pour changer la photo du qui suis-je, changer src -->
+                <img src="images/Karine.png" alt="karine">
+            </div>
+            <div id="text" class="text animation_text">
+                <h2>Karine</h2>
+                <p> J'ai ramené la <strong>passion du massage</strong> de mes nombreux voyages (USA, Polynésie, Philippines, Chine, Maghreb, etc.)</p><br>
+                <p> Initiée
+                    <strong> depuis de nombreuses années
+                            </strong> aux bases du massage, j’ai ainsi approfondi mes connaissances en me formant aux différentes techniques que je vous propose pour leurs effets relaxants reconnus.</p>
+                <br>
+                <p> Maître REIKI, je vous ferai aussi profiter des bienfaits de cette ancienne méthode japonaise de guérison naturelle reconnue dans de nombreux pays(soins remboursés par les assurances maladie en Allemagne, Suisse, Pays Bas, Irlande…), pour
+                    son action bénéfique sur l 'harmonisation des énergies, la baisse des douleurs et du stress, etc .</p><br>
+                <p> Le bien-être repose également sur
+                    <strong> l’ écoute, le partage, le respect, la confidentialité et la convivialité.
+                            </strong>
+                </p>
+                <br>
+                <p> À votre écoute, sensible à vos besoins, je serai particulièrement attentive à votre confort et
+                    <strong> je m’engage à fournir une prestation de qualité dans le respect de la personne et des règles d’hygiène.
+                            </strong>
+                </p><br>
+                <a href="who.html"><span class="arrow">&rarr;</span>Voir plus</a><br>
+                <p> </p>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------- Fin Qui suis-je ? ------------------------------------------------------>
+
+
+
+    <!----------------------------------------------- Vidéo  ---------------------------------------------------------->
+    <section id="video">
+        <div class="title title-left">
+            <span class="line"></span>
+            <h3>Massage Bien-être</h3>
+        </div>
+        <div class="wrapper">
+            <div class="text animation_text">
+                <p>Installée à <strong>Cabourg depuis 2006</strong> , reconnue dans la région, décrite par le Figaro (2012) comme <strong>« La Cabourgeaise aux mains d’Or »</strong>, remarquée par le magazine ELLE pour mes <strong>« Doigts experts »</strong>et
+                    filmée en 2018 par M6, je suis intervenue durant plusieurs années au sein du prestigieux <strong>« Grand-Hôtel »</strong> de Cabourg ainsi que dans de nombreux <strong>autre établissement hôtelier</strong> . Depuis 2011, je collabore
+                    avec l’Office de Tourisme de Cabourg avec qui j'ai notamment proposé du Do-In et des massages sur la plage de Cabourg. </p>
+                <p> De même, j'ai été formatrice durant plusieurs années, pour <strong>l'École Européenne de Bien-être et pour l'Association Massages & Bien-être</strong> </p>
+            </div>
+            <div id="player" class="video-wrapper animation_video">
+
+                <!-- Changez href pour changer la vidéo (lien youtube)-->
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0ZNofV4STkc?si=lKAeCDFXblrd4pls" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <section id="offre">
+            <div class="title title-center">
+                <h3>Offre du moment</h3>
+            </div>
+            <div class="center-img animation_video">
+                <img src="images/offre.png" alt="offre du moment">
+            </div>
+        </section>
+
+    </section>
+
+    <!----------------------------------------------- Fin Vidéo ------------------------------------------------------->
+
+
+
+    <!----------------------------------------------- Massage du monde ------------------------------------------------>
+    <section id="massage">
+        <div class="title title-right">
+            <span class="line line-right"></span>
+            <h3>Massage du monde</h3>
+        </div>
+        <div class="wrapper">
+            <a class="box box3" href="/perso.html">
+                <h4 class="box-title">Massage Personnalisé</h4>
+                <div class="box-overlay">
+                    <div class="description">
+                        <p>Mélange de toutes les techniques que je pratique, et fruit de mon expérience, ce massage entièrement personnalisé (HOLISTIQUE) est réalisé selon vos attentes, vos besoins et mon ressenti. Il s'agira le plus souvent d'un massage
+                            du corps entier. Néanmoins, il pourra parfois n'être réalisé que sur une partie du corps (visage, pieds avec stimulation des points réflexes, dos, etc.) </p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+            </a>
+            <a class="box box1" href="/suedoi.html">
+                <h4 class="box-title">Massage Suedois</h4>
+                <div class="box-overlay">
+                    <div class="description">
+                        <p>C’est le massage traditionnel occidental. Dynamique, il vise à dissoudre les tensions, à raffermir les muscles et les articulations.</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </a>
+            <a class="box box1" href="/californien.html">
+                <h4 class="box-title">Massage Californien</h4>
+                <div class="box-overlay">
+                    <div class="description">
+                        <p>C'est un massage de relaxation et de bien-être du corps, à base de longs mouvements fluides et harmonieux, pétrissages, pressions glissées et effleurages.</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+            </a>
+            <a class="box box1" href="/hawaien.html">
+                <h4 class="box-title">MASSAGE HAWAÏEN « LOMI LOMI » </h4>
+                <div class="box-overlay">
+                    <div class="description">
+                        <p>C'est un massage enveloppant et puissant, profond et rythmé qui ressemble à une danse gracieuse, constamment en mouvement, un massage qui relie toutes les dimensions de l'être et qui rassemble toutes les parties du corps.</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+            </a>
+            <a class="box box1" href="/ayu.html">
+                <h4 class="box-title">MASSAGE AYURVÉDIQUE « ABHYANGA » </h4>
+                <div class="box-overlay">
+                    <div class="description">
+                        <p>Massage traditionnel du sud de l'Inde, réalisé à l'huile chaude sur l'ensemble du corps et qui procure détente, remise en forme et préparation du corps au mouvement. Ce massage fait l’objet d'une demande croissante de la part d'un
+                            public de plus en plus sensibilisé aux approches traditionnelles de santé.
+                        </p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+            </a>
+            <a class="box box1" href="/pierre.html">
+                <h4 class="box-title">MASSAGE AUX PIERRES CHAUDES </h4>
+                <div class="box-overlay">
+                    <div class="description">
+                        <p>Les pierres chaudes sont connues des indiens et de la médecine traditionnelle chinoise. Des pierres volcaniques de basalte, chauffées dans de l’eau, sont posées sur les centres énergétiques du corps et des techniques de massage
+                            sont aussi effectuées à l’aide de ces pierres chaudes, pour améliorer l’harmonie énergétique.</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </div>
+
+            </a>
+            <a class="box box1" href="/visage.html">
+                <h4 class="box-title">MASSAGE Visage </h4>
+                <div class="box-overlay">
+                    <div class="description">
+                        <p> Le massage du visage est une technique que les impératrices japonaises utilisaient pour être belles et avoir une peau soignée.</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+            </a>
+        </div>
+    </section>
+
+    <!----------------------------------------------- Fin Massage du monde --------------------------------------------->
+
+    <!----------------------------------------------- Avis ------------------------------------------------------------->
+
+    <section id="video">
+        <div class="title title-left">
+            <span class="line"></span>
+            <h3>Les avis</h3>
+        </div>
+        <div class="wrapper">
+            <div class="text animation_text">
+                <p>Lorsque j’intervenais au « Grand Hôtel », j’ai eu l’occasion de masser quelques « stars » qui m’ont gentiment témoigné leur ressenti après mes massages : </p>
+                <p> Et, à mon cabinet, j’ai aussi le plaisir de recevoir de nombreuses personnes qui, elles aussi, témoignent de leur satisfaction : </p>
+            </div>
+
+        </div>
+        <div class="container2">
+
+            <div class="testimonial mySwiper">
+
+                <div class="testi-content swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <img src="images/Valérie.jpg" alt="Valérie LEMERCIER" class="image">
+                        <p>
+                            « Quelle détente en fin de tournage ! » </p>
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                        <div class="details">
+                            <span class="name">Valérie LEMERCIER</span>
+                            <span class="job">Actrice</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="images/kavanagh.jpg" alt="Anthony KAVANAGH" class="image">
+                        <p>
+                            « Super ! » </p>
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                        <div class="details">
+                            <span class="name">Anthony KAVANAGH</span>
+                            <span class="job">Artiste</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="images/michel-boujenah.jpg" alt="michel-boujenah" class="image">
+                        <p>
+                            « Il y a longtemps que je ne m’étais pas senti aussi détendu. » </p>
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                        <div class="details">
+                            <span class="name">Michel BOUJENAH </span>
+                            <span class="job">Artiste</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="images/charlotte.jpg" alt="Charlotte BOUTELOUP" class="image">
+                        <p>
+                            « Un massage des pieds à la tête : quel bonheur ! » </p>
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                        <div class="details">
+                            <span class="name">Charlotte BOUTELOUP </span>
+                            <span class="job">Journaliste à France 2</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="images/Virginie.jpg" alt="Virginie EFIRA" class="image">
+                        <p>
+                            « La tête et le visage à la limite de la lévitation !» </p>
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                        <div class="details">
+                            <span class="name">Virginie EFIRA </span>
+                            <span class="job">Animatrice et comédienne, au Festival du Film Romantique</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="images/Logo_Sans_texte.png" alt="Massge Bien-être" class="image">
+                        <p>
+                            « J'ai découvert le massage grâce à vous. Merci, c'était super et je vais devenir une adepte. À bientôt » </p>
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                        <div class="details">
+                            <span class="name">Véronique P. </span>
+                            <span class="job">Cliente</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="images/Logo_Sans_texte.png" alt="Massge Bien-être" class="image">
+                        <p>
+                            « Super détente inoubliable avec une professionnelle à votre écoute ce qui est très important avant tout soin de relaxation ou massage. Elle s'adapte à vous et fait en fonction de vous. Encore un grand merci cela fait un grand bien physiquement et moralement
+                            » </p>
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                        <div class="details">
+                            <span class="name">Julien H. </span>
+                            <span class="job">Cliente</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="images/Logo_Sans_texte.png" alt="Massge Bien-être" class="image">
+                        <p>
+                            « Un superbe moment de détente et de relaxation, dans un super cadre invitant à la méditation. Merci Karine pour cette belle expérience. À renouveler sans modération » </p>
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                        <div class="details">
+                            <span class="name">Claude B. </span>
+                            <span class="job">Client</span>
+                        </div>
+                    </div>
+
+                    <div class="slide swiper-slide">
+                        <img src="images/Logo_Sans_texte.png" alt="Massge Bien-être" class="image">
+                        <p>
+                            « Énormément à l'écoute et très professionnelle, donne de bons conseils » </p>
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                        <div class="details">
+                            <span class="name">Emma L. </span>
+                            <span class="job">Cliente</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="images/Logo_Sans_texte.png" alt="Massge Bien-être" class="image">
+                        <p>
+                            « Wonderfull treatment » </p>
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                        <div class="details">
+                            <span class="name">Cath C. </span>
+                            <span class="job">Cliente</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="images/Logo_Sans_texte.png" alt="Massge Bien-être" class="image">
+                        <p>
+                            «Découvrant les massages, ai pu apprécier la technicité, le confort que cela m’a donné par le bienfait de cette professionnelle. Simplicité, discrétion, sont de mise, ainsi que le lieu amenant à la décontraction. À recommencer sans modération, et à recommander
+                            » </p>
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+                        <div class="details">
+                            <span class="name">Jean-Louis P. </span>
+                            <span class="job">Cliente</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next nav-btn"></div>
+                <div class="swiper-button-prev nav-btn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------------------- Fin Avis -------------------------------------------------------->
+
+    <!----------------------------------------------- Notre emplacement ----------------------------------------------->
+
+    <section id="where">
+        <div class="title title-right">
+            <span class="line"></span>
+            <h3>Notre emplacement</h3>
+        </div>
+        <div class="wrapper">
+            <div class="text animation_text">
+                <p>Installée à <strong>Cabourg depuis 2006</strong> , reconnue dans la région, décrite par le Figaro (2012) comme <strong>« La Cabourgeaise aux mains d’Or »</strong>, remarquée par le magazine ELLE pour mes <strong>« Doigts experts »</strong>et
+                    filmée en 2018 par M6, je suis intervenue durant plusieurs années au sein du prestigieux <strong>« Grand-Hôtel »</strong> de Cabourg ainsi que dans de nombreux <strong>autre établissement hôtelier</strong> . Depuis 2011, je collabore
+                    avec l’Office de Tourisme de Cabourg avec qui j'ai notamment proposé du Do-In et des massages sur la plage de Cabourg. </p>
+                <p> De même, j'ai été formatrice durant plusieurs années, pour <strong>l'École Européenne de Bien-être et pour l'Association Massages & Bien-être</strong> </p>
+            </div>
+            <div id="player" class="map-wrapper animation_video">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.2546708480436!2d-0.1246090240117557!3d49.29051867019991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a7c7bb5f72c0b%3A0x51f02481b864487!2sMASSAGE%20CABOURG%20-%20KARINE%20MASSAGES%20BIEN-%C3%8ATRE!5e0!3m2!1sfr!2sfr!4v1708989258990!5m2!1sfr!2sfr"
+                    width="600" height="450" style="border:0;" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------------------- Fin Notre emplacement -------------------------------------------->
+
+    <!----------------------------------------------- Footer ------------------------------------------------------------>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4> En quelques mots ...
+                    </h4>
+                    <ul>
+                        <li class="red">
+                            <i class="fa-solid fa-circle-exclamation"></i> RV par téléphone uniquement
+                        </li>
+                        <li>
+                            <p>Praticienne diplômée, depuis 2006 à Cabourg, je suis à votre écoute pour vous recevoir dans un cadre zen, chauffé à 25° et en musique. Je vous vous proposerai votre massage personnalisé, à base de techniques de massage du monde
+                                et énergétiques, vous apportant une grande relaxation du corps et de l'esprit.
+                            </p>
+                        </li>
+                        <li class="red">
+                            <i class="fa-solid fa-circle-exclamation"></i> <strong>MASSAGES NON SEXUELS ni tantrique, ni naturiste, ni autres massages de ce «style»</strong>
+                        </li>
+                        <li>
+                            <img id="header-img" src="/images/Massage_by_Karine_V1.png" alt="logo">
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> Nous contacter
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.google.fr/maps/place/MASSAGE+CABOURG+-+KARINE+MASSAGES+BIEN-%C3%8ATRE/@49.2905152,-0.124609,17z/data=!4m15!1m8!3m7!1s0x480a7c7a4ae9fda7:0x6a871afed2d67a4a!2s7+Av.+Albert+Sergent,+14390+Cabourg!3b1!8m2!3d49.2905152!4d-0.1220341!16s%2Fg%2F11bw3xsmmb!3m5!1s0x480a7c7bb5f72c0b:0x51f02481b864487!8m2!3d49.2904268!4d-0.1224079!16s%2Fg%2F1tdpfk_q?entry=ttu">
+                                7 avenue Albert Sergent - 14390 CABOURG
+                                </a>
+                        </li>
+                        <li class="red">
+                            <a href="tel:+33660841147">
+                                <i class="fa-solid fa-phone"></i> 06 60 84 11 47
+                                <!--tenter de faire lien cliquable pour telephone-->
+                            </a>
+                        </li>
+                        <li>
+                            <i style="color: rgba(255, 255, 0, 0.959);" class="fa-solid fa-star"></i>
+                            <i style="color: rgba(255, 255, 0, 0.959);" class="fa-solid fa-star"></i>
+                            <i style="color: rgba(255, 255, 0, 0.959);" class="fa-solid fa-star"></i>
+                            <i style="color: rgba(255, 255, 0, 0.959);" class="fa-solid fa-star"></i>
+                            <i style="color: rgba(255, 255, 0, 0.959);" class="fa-solid fa-star-half-stroke"></i><br> 4,9 sur google
+                        </li>
+                        <li class="red">
+                            <i class="fa-solid fa-circle-exclamation"></i> Pas de paiement par carte
+                        </li>
+                        <li>
+                            <img id="header-img" src="/images/cb-removebg-preview.png" alt="no bank card">
+                        </li>
+                    </ul>
+                    <h4> Mentions Légales
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="mention.html">
+                                Mentions Légales
+                                </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> Prestation
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="perso.html">
+                                Massage personnalisé
+                                </a>
+                        </li>
+                        <li>
+                            <a href="suedoi.html">
+                                Massage suédois
+                                </a>
+                        </li>
+                        <li>
+                            <a href="californien.html">
+                                Massage Californien
+                                </a>
+                        </li>
+                        <li>
+                            <a href="hawaien.html">
+                                Massage Hawaïen
+                                </a>
+                        </li>
+                        <li>
+                            <a href="ayu.html">
+                                Massage Ayurvédique
+                                </a>
+                        </li>
+                        <li>
+                            <a href="pierre.html">
+                                Massage aux pierres chaudes
+                                </a>
+                        </li>
+                        <li>
+                            <a href="visage.html">
+                                Massage visage
+                                </a>
+                        </li>
+                        <li>
+                            <a href="massage_sonore.html">
+                                Massage sonore vibratoire
+                                </a>
+                        </li>
+                        <li>
+                            <a href="reflexologie.html">
+                                Réflexologie faciale
+                                </a>
+                        </li>
+                        <li>
+                            <a href="pressotherapie.html">
+                                Pressothérapie
+                                </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> follow us
+                    </h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/MassagesByKarine/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0">
+                            <i class="fab fa-facebook-f">
+                                </i>
+                        </a>
+                        <a href="https://www.instagram.com/karine_massage_cabourg?igsh=M3IzMWtzeTdhOXAz">
+                            <i class="fab fa-instagram">
+                                </i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/karine-maitre-p%C3%A9tr%C3%A9-1288602b7/">
+                            <i class="fab fa-linkedin-in">
+                                </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>©2024 Massage Cabourg - Massages bien-être by Karine.</p>
+        </div>
+    </footer>
+
+    <!----------------------------------------------- Fin Footer ------------------------------------------------------------>
+
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Massage Bien-être</title>
+
+    <!-- Change la photo de l'onglet du site-->
+    <link rel="icon" href="images/Logo_Karine.png" type="images/x-icon">
+
+
+    <!-- style, font, icon par cdn -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Local Style sheet-->
+
+    <link rel="stylesheet" href="/styles/massage.css">
+
+    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/load_screen.css">
+
+
+    <!-- Cdn script -->
+
+    <!-- Local script-->
+    <script src="/scripts/massages.js" defer></script>
+    <script src="/scripts/load_screen.js" defer></script>
+
+</head>
+
+
+
+<!---------------------------------------- Nav bar -------------------------------------------------------->
+
+<body>
+
+    <div class="body-loading">
+        <div class="load-img">
+            <img src="images/Logo_Karine.png" alt="logo">
+        </div>
+        <div class="loading">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    <header id="header">
+        <a class="nav-brand" href="index.html">
+            <img id="header-img" src="/images/Logo_Sans_texte.png" alt="logo">
+        </a>
+
+        <!-- Menu for Mobile -->
+
+        <input type="checkbox" id="toggle-menu" role="button" aria-pressed="true">
+        <label for="toggle-menu" class="toggle-menu">Menu</label>
+
+        <!--  Menus  -->
+        <nav id="nav-bar" class="navbar">
+            <ul class="menu">
+                <li><a class="nav-link" href="massage.html">Massage</a>
+                    <ul class="submenu">
+                        <li><a href="perso.html">Personnalisé</a></li>
+                        <li><a href="suedoi.html">Suédois</a></li>
+                        <li><a href="californien.html">Californien</a></li>
+                        <li><a href="hawaien.html">Hawaïen "Lomi Lomi"</a></li>
+                        <li><a href="ayu.html">Ayurvédique "Abhyanga"</a></li>
+                        <li><a href="pierre.html">Aux pierres chaudes</a></li>
+                        <li><a href="visage.html">Visage</a></li>
+                    </ul>
+                </li>
+
+                <li><a class="nav-link" href="autre.html">Autre massage</a>
+                    <ul class="submenu">
+                        <li><a href="sonores.html">Sonores</a></li>
+                        <li><a href="reflexologie.html">Réflexologie faciale</a></li>
+                        <li><a href="pressotherapie.html">Pressothérapie</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link" href="salon.html">Mon salon</a></li>
+
+                <li><a class="nav-link" href="tarif.html">Tarifs</a></li>
+                <li><a class="nav-link" href="contact.html">Contact / plan</a></li>
+                <li><i class="fa-solid fa-phone"></i> 06 60 84 11 47
+                </li>
+            </ul>
+
+            <!-- Si changement de compte fb, insta, linkedin changer les liens dans les href -->
+            <ul class="social-menu">
+                <li>
+                    <a href="https://www.facebook.com/MassagesByKarine/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0"><i class="fab fa-facebook-f">
+            </i></a>
+                </li>
+                <li><a href="https://www.instagram.com/karine_massage_cabourg?igsh=M3IzMWtzeTdhOXAz"><i class="fab fa-instagram">
+            </i></a></li>
+                <li><a href="https://www.linkedin.com/in/karine-maitre-p%C3%A9tr%C3%A9-1288602b7/"><i class="fab fa-linkedin">
+            <!--pour le linkedin dès qu'il est crée n'hésitez pas à le mettre -->
+            </i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!---------------------------------------- Fin Nav bar -------------------------------------------------------->
+
+
+    <!---------------------------------------- Début section selection massage -------------------------------------------------------->
+
+    <section id="selection-massage">
+        <div class="title title-left">
+            <span class="line"></span>
+            <h3>Autres Massages</h3>
+            <div class="second"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" id="second" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M466.506 322.324h-56.028a40.288 40.288 0 0 0 3.664-7.567c5.69-15.836.98-32.99-12.002-43.7l-66.502-54.868c-7.668-35.033-38.923-61.345-76.224-61.345-35.855 0-66.12 24.313-75.225 57.313L167.46 153.6c23.911-13.352 40.125-38.901 40.125-68.177 0-43.031-35.008-78.041-78.041-78.041-43.033 0-78.042 35.007-78.042 78.039 0 16.573 5.209 31.945 14.053 44.596-15.858 15.065-24.841 35.768-24.841 57.905v134.656C17.867 324.974 0 344.349 0 367.82c0 25.015 20.296 45.375 45.287 45.489v26.895a9.253 9.253 0 0 0 18.506 0v-26.892h23.288v72.799H63.793v-1.872a9.253 9.253 0 0 0-18.506 0v11.126a9.253 9.253 0 0 0 9.253 9.253h41.794a9.253 9.253 0 0 0 9.253-9.253v-8.688l148.781-72.329 151.193 73.502c.281.137.566.25.852.357v7.158a9.253 9.253 0 0 0 9.253 9.253h41.794a9.253 9.253 0 0 0 9.253-9.253v-82.058c24.991-.113 45.287-20.473 45.287-45.489 0-25.085-20.408-45.494-45.494-45.494zM336.995 241.3l53.368 44.032c8.354 6.892 8.764 16.486 6.364 23.168-2.401 6.683-8.826 13.824-19.66 13.824h-108.4v-11.966c14.521-1.725 27.824-7.447 38.789-16.04.772.208 1.58.331 2.418.331h33.722a9.253 9.253 0 0 0 0-18.506H324.33a77.547 77.547 0 0 0 12.665-34.843zm-77.581-67.95c32.827 0 59.535 26.707 59.535 59.535s-26.707 59.535-59.535 59.535-59.535-26.707-59.535-59.535 26.708-59.535 59.535-59.535zm-64.917 102.793h-19.265a9.253 9.253 0 0 0 0 18.506h31.953a9.215 9.215 0 0 0 3.652-.751c11.064 8.827 24.566 14.709 39.324 16.462v11.966H141.756c-10.832-.001-17.258-7.142-19.66-13.825-2.401-6.682-1.99-16.277 6.364-23.168l53.373-44.036a77.546 77.546 0 0 0 12.664 34.846zM129.542 25.885c32.827 0 59.535 26.707 59.535 59.535 0 32.828-26.708 59.535-59.535 59.535S70.007 118.249 70.007 85.42c0-32.828 26.708-59.535 59.535-59.535zM59.219 187.921c0-16.806 6.732-32.545 18.648-44.09 13.776 12.202 31.87 19.63 51.675 19.63 7.162 0 14.093-.989 20.686-2.804l19.127 66.942-28.134 23.211-14.206-42.767c-1.611-4.85-6.85-7.476-11.698-5.864a9.252 9.252 0 0 0-5.864 11.698l16.464 49.562-9.233 7.618c-12.98 10.711-17.692 27.864-12.002 43.701a40.318 40.318 0 0 0 3.664 7.567H59.219V187.921zM105.587 466.1v-52.788h108.585L105.587 466.1zm342.62 20.011h-23.288v-72.799h23.288v72.799zm18.299-91.305h-79.113a9.253 9.253 0 0 0 0 18.506h19.022v54.376l-111.85-54.376h42.897a9.253 9.253 0 0 0 0-18.506H45.494c-14.881 0-26.988-12.107-26.988-26.988s12.107-26.988 26.988-26.988h421.012c14.881 0 26.988 12.107 26.988 26.988s-12.107 26.988-26.988 26.988z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg></div>
+        </div>
+        <ul class="card-list">
+
+            <li class="card">
+                <!--Si vous avez des images a proposez nous sommes preneurs-->
+                <a class="card-image" href="sonores.html" style="background-image: url(images/massage-perso.jpg);" data-image-full="images/massage-perso.jpg">
+                    <img src="images/massage-perso.jpg" alt="massage sonore">
+                </a>
+                <a class="card-description" href="sonores.html">
+                    <h2>MASSAGE SONORE</h2>
+                </a>
+            </li>
+
+            <li class="card">
+                <a class="card-image" href="reflexologie.html" style="background-image: url(images/Réflexologie_DSC_2680.jpg);" data-image-full="images/Réflexologie_DSC_2680.jpg">
+                    <img src="images/Réflexologie_DSC_2680.jpg" alt="massage reflexologie">
+                </a>
+                <a class="card-description" href="reflexologie.html">
+                    <h2>RÉFLEXOLOGIE FACIALE</h2>
+                </a>
+            </li>
+
+            <li class="card">
+                <a class="card-image" href="pressotherapie.html" style="background-image: url(images/massagecalifornien.jpg);" data-image-full="images/massagecalifornien.jpg">
+                    <img src="images/massagecalifornien.jpg" alt="massage californien">
+                </a>
+                <a class="card-description" href="pressotherapie.html">
+                    <h2>PRESSOTHÉRAPIE</h2>
+                </a>
+            </li>
+
+        </ul>
+    </section>
+
+    <!---------------------------------------- Fin section selection massage-------------------------------------------------------->
+
+    <!---------------------------------------- Debut section tarif massages (a modif en faisant un tableau)-------------------------------------------------------->
+    <section id="me">
+        <div class="title title-left">
+            <span class="line"></span>
+            <h3>Tarifs</h3>
+        </div>
+        <div class="wrapper">
+            <div class="image-center">
+                <!-- Pour changer la photo du qui suis-je, changer src -->
+                <img src="https://th.bing.com/th/id/R.46b26bb741b3b47a4acb9556b2e5fcdb?rik=fzJIac2HhvnKXA&riu=http%3a%2f%2fgites-aydat-auvergne.fr%2fwp-content%2fuploads%2f2020%2f09%2fTARIFS_2020.jpg&ehk=GNfSSgWw1LKizLbTCsvoBD8MSAlMm%2fHh5b1cSuAwUqQ%3d&risl=&pid=ImgRaw&r=0"
+                    alt="tarif">
+            </div>
+            <div class="text">
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!----------------------------------------------- Footer ------------------------------------------------------------>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4> En quelques mots ...
+                    </h4>
+                    <ul>
+                        <li class="red">
+                            <i class="fa-solid fa-circle-exclamation"></i> RV par téléphone uniquement
+                        </li>
+                        <li>
+                            <p>Praticienne diplômée, depuis 2006 à Cabourg, je suis à votre écoute pour vous recevoir dans un cadre zen, chauffé à 25° et en musique. Je vous vous proposerai votre massage personnalisé, à base de techniques de massage du monde
+                                et énergétiques, vous apportant une grande relaxation du corps et de l'esprit.
+                            </p>
+                        </li>
+                        <li class="red">
+                            <i class="fa-solid fa-circle-exclamation"></i> <strong>MASSAGES NON SEXUELS ni tantrique, ni naturiste, ni autres massages de ce «style»</strong>
+                        </li>
+                        <li>
+                            <img id="header-img" src="/images/Massage_by_Karine_V1.png" alt="logo">
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> Nous contacter
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="https://www.google.fr/maps/place/MASSAGE+CABOURG+-+KARINE+MASSAGES+BIEN-%C3%8ATRE/@49.2905152,-0.124609,17z/data=!4m15!1m8!3m7!1s0x480a7c7a4ae9fda7:0x6a871afed2d67a4a!2s7+Av.+Albert+Sergent,+14390+Cabourg!3b1!8m2!3d49.2905152!4d-0.1220341!16s%2Fg%2F11bw3xsmmb!3m5!1s0x480a7c7bb5f72c0b:0x51f02481b864487!8m2!3d49.2904268!4d-0.1224079!16s%2Fg%2F1tdpfk_q?entry=ttu">
+                            7 avenue Albert Sergent - 14390 CABOURG
+                            </a>
+                        </li>
+                        <li class="red">
+                            <a href="tel:+33660841147">
+                                <i class="fa-solid fa-phone"></i> 06 60 84 11 47
+                                <!--tenter de faire lien cliquable pour telephone-->
+                            </a>
+                        </li>
+                        <li>
+                            <i style="color: rgba(255, 255, 0, 0.959);" class="fa-solid fa-star"></i>
+                            <i style="color: rgba(255, 255, 0, 0.959);" class="fa-solid fa-star"></i>
+                            <i style="color: rgba(255, 255, 0, 0.959);" class="fa-solid fa-star"></i>
+                            <i style="color: rgba(255, 255, 0, 0.959);" class="fa-solid fa-star"></i>
+                            <i style="color: rgba(255, 255, 0, 0.959);" class="fa-solid fa-star-half-stroke"></i><br> 4,9 sur google
+                        </li>
+                        <li class="red">
+                            <i class="fa-solid fa-circle-exclamation"></i> Pas de paiement par carte
+                        </li>
+                        <li>
+                            <img id="header-img" src="/images/cb-removebg-preview.png" alt="no bank card">
+                        </li>
+                    </ul>
+                    <h4> Mentions Légales
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="mention.html">
+                            Mentions Légales
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> Prestation
+                    </h4>
+                    <ul>
+                        <li>
+                            <a href="perso.html">
+                            Massage personnalisé
+                            </a>
+                        </li>
+                        <li>
+                            <a href="suedoi.html">
+                            Massage suédois
+                            </a>
+                        </li>
+                        <li>
+                            <a href="californien.html">
+                            Massage Californien
+                            </a>
+                        </li>
+                        <li>
+                            <a href="hawaien.html">
+                            Massage Hawaïen
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ayu.html">
+                            Massage Ayurvédique
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pierre.html">
+                            Massage aux pierres chaudes
+                            </a>
+                        </li>
+                        <li>
+                            <a href="visage.html">
+                            Massage visage
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sonores.html">
+                            Massage sonore vibratoire
+                            </a>
+                        </li>
+                        <li>
+                            <a href="reflexologie.html">
+                            Réflexologie faciale
+                            </a>
+                        </li>
+                        <li>
+                            <a href="pressotherapie.html">
+                            Pressothérapie
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> follow us
+                    </h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/MassagesByKarine/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0">
+                            <i class="fab fa-facebook-f">
+                            </i>
+                        </a>
+                        <a href="https://www.instagram.com/karine_massage_cabourg?igsh=M3IzMWtzeTdhOXAz">
+                            <i class="fab fa-instagram">
+                            </i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/karine-maitre-p%C3%A9tr%C3%A9-1288602b7/">
+                            <i class="fab fa-linkedin-in">
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>©2024 Massage Cabourg - Massages bien-être by Karine.</p>
+        </div>
+    </footer>
+
+    <!----------------------------------------------- Fin Footer ------------------------------------------------------------>
+</body>
+
+</html>

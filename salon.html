@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Massage Bien-être</title>
+
+    <!-- Change la photo de l'onglet du site-->
+    <link rel="icon" href="images/Logo_Karine.png" type="images/x-icon">
+
+
+    <!-- style, font, icon par cdn -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Local Style sheet-->
+
+    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="/styles/salon.css">
+    <link rel="stylesheet" href="/styles/avis.css">
+    <link rel="stylesheet" href="/styles/load_screen.css">
+
+    <!-- Cdn script -->
+
+    <!-- Local script-->
+    <script src="/scripts/main.js" defer></script>
+
+    <script src="/scripts/box.js" defer></script>
+    <script src="/scripts/avis.js" defer></script>
+    <script src="/scripts/load_screen.js" defer></script>
+    <script src="/scripts/dark_light_mode.js" defer></script>
+
+
+
+
+</head>
+
+<body>
+
+    <!---------------------------------------- Loading screen -------------------------------------------------------->
+
+    <div class="body-loading">
+        <div class="load-img">
+            <img src="images/Logo_Karine.png" alt="logo">
+        </div>
+        <div class="loading">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+    <!---------------------------------------- Fin Loading screen -------------------------------------------------------->
+
+    <body data-theme="light">
+
+        <header id="header">
+            <a class="nav-brand" href="index.html">
+                <img id="header-img" src="/images/Logo_Sans_texte.png" alt="logo">
+            </a>
+
+            <!-- Menu for Mobile -->
+
+            <input type="checkbox" id="toggle-menu" role="button" aria-pressed="true">
+            <label for="toggle-menu" class="toggle-menu">Menu</label>
+
+            <!--  Menus  -->
+            <nav id="nav-bar" class="navbar">
+                <ul class="menu">
+                    <!--<li><a class="nav-link" href="who.html">Qui suis-je</a></li>-->
+                    <li><a class="nav-link" href="massage.html">Massage</a>
+                        <ul class="submenu">
+                            <li><a href="perso.html">Personnalisé</a></li>
+                            <li><a href="suedoi.html">Suédois</a></li>
+                            <li><a href="californien.html">Californien</a></li>
+                            <li><a href="hawaien.html">Hawaïen "Lomi Lomi"</a></li>
+                            <li><a href="ayu.html">Ayurvédique "Abhyanga"</a></li>
+                            <li><a href="pierre.html">Aux pierres chaudes</a></li>
+                            <li><a href="visage.html">Visage</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="nav-link" href="autre.html">Autre massage</a>
+                        <ul class="submenu">
+                            <li><a href="sonores.html">Sonores</a></li>
+                            <li><a href="refelexologie.html">Réflexologie faciale</a></li>
+                            <li><a href="presso.html">Pressothérapie</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link" href="salon.html">Mon salon</a></li>
+                    <li><a class="nav-link" href="tarif.html">Tarifs</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact / plan</a></li>
+                    <li><i class="fa-solid fa-phone"></i> 06 60 84 11 47
+                    </li>
+                </ul>
+
+                <!-- Si changement de compte fb, insta, linkedin changer les liens dans les href -->
+                <ul class="social-menu">
+                    <li>
+                        <a href="https://www.facebook.com/MassagesByKarine/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0"><i class="fab fa-facebook-f">
+                </i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/karine_massage_cabourg?igsh=M3IzMWtzeTdhOXAz"><i class="fab fa-instagram">
+                </i></a></li>
+                    <li><a href="https://www.linkedin.com/in/karine-maitre-p%C3%A9tr%C3%A9-1288602b7/"><i class="fab fa-linkedin">
+                </i></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!---------------------------------------- Fin Nav bar -------------------------------------------------------->
+
+
+
+        <!----------------------------------------------- Vidéo  ---------------------------------------------------------->
+
+
+
+        <section id="selection-massage">
+            <div class="button_mode">
+                <a id="theme-toggle" href="#">
+                    <i id="theme-icon" class="fas fa-sun sun"></i>
+                    <!-- Initially moon icon -->
+                </a>
+
+
+            </div>
+            <div class="center-text">
+                <span>Jour | Nuit</span>
+            </div>
+
+            <div class="about pd-y jour">
+                <div class="section-header">
+                    <i class="fa-solid fa-sun icon-sun sun"></i>
+                    <h2 class="section-title">Mon Salon de Jour</h2>
+                    <span class="line"></span>
+                </div>
+                <div class="container-bienfait">
+                    <div class="about-content">
+                        <div class="about-item">
+                            <div id="player" class="video-wrapper animation_video">
+                                <!-- Changez src pour changer la vidéo mon cabinet de jour (lien youtube) -->
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/0ZNofV4STkc?si=lKAeCDFXblrd4pls" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="about pd-y nuit">
+                <div class="section-header">
+                    <i class="fa-solid fa-moon  icon-moon"></i>
+                    <h2 class="section-title">Mon Salon de Nuit</h2>
+                    <span class="line"></span>
+                </div>
+                <div class="container-bienfait">
+                    <div class="about-content">
+                        <div class="about-item">
+                            <div id="player" class="video-wrapper animation_video">
+                                <!-- Changez src pour changer la vidéo mon cabinet de nuit (lien youtube) -->
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=LOO8XcQFAupAhOdj" title="YouTube video player" allow=" accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share " allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!----------------------------------------------- Fin Vidéo ------------------------------------------------------->
+
+
+
+        <!----------------------------------------------- Footer ------------------------------------------------------------>
+
+        <footer class="footer ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="footer-col ">
+                        <h4> En quelques mots ...
+                        </h4>
+                        <ul>
+                            <li class="red ">
+                                <i class="fa-solid fa-circle-exclamation "></i> RV par téléphone uniquement
+                            </li>
+                            <li>
+                                <p>Praticienne diplômée, depuis 2006 à Cabourg, je suis à votre écoute pour vous recevoir dans un cadre zen, chauffé à 25° et en musique. Je vous vous proposerai votre massage personnalisé, à base de techniques de massage
+                                    du monde et énergétiques, vous apportant une grande relaxation du corps et de l'esprit.
+                                </p>
+                            </li>
+                            <li class="red ">
+                                <i class="fa-solid fa-circle-exclamation "></i> <strong>MASSAGES NON SEXUELS ni tantrique, ni naturiste, ni autres massages de ce «style»</strong>
+                            </li>
+                            <li>
+                                <img id="header-img " src="/images/Massage_by_Karine_V1.png " alt="logo ">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col ">
+                        <h4> Nous contacter
+                        </h4>
+                        <ul>
+                            <li>
+                                <a href="https://www.google.fr/maps/place/MASSAGE+CABOURG+-+KARINE+MASSAGES+BIEN-%C3%8ATRE/@49.2905152,-0.124609,17z/data=!4m15!1m8!3m7!1s0x480a7c7a4ae9fda7:0x6a871afed2d67a4a!2s7+Av.+Albert+Sergent,+14390+Cabourg!3b1!8m2!3d49.2905152!4d-0.1220341!16s%2Fg%2F11bw3xsmmb!3m5!1s0x480a7c7bb5f72c0b:0x51f02481b864487!8m2!3d49.2904268!4d-0.1224079!16s%2Fg%2F1tdpfk_q?entry=ttu ">
+                                7 avenue Albert Sergent - 14390 CABOURG
+                                </a>
+                            </li>
+                            <li class="red ">
+                                <a href="tel:+33660841147 ">
+                                    <i class="fa-solid fa-phone "></i> 06 60 84 11 47
+                                    <!--tenter de faire lien cliquable pour telephone-->
+                                </a>
+                            </li>
+                            <li>
+                                <i style="color: rgba(255, 255, 0, 0.959); " class="fa-solid fa-star "></i>
+                                <i style="color: rgba(255, 255, 0, 0.959); " class="fa-solid fa-star "></i>
+                                <i style="color: rgba(255, 255, 0, 0.959); " class="fa-solid fa-star "></i>
+                                <i style="color: rgba(255, 255, 0, 0.959); " class="fa-solid fa-star "></i>
+                                <i style="color: rgba(255, 255, 0, 0.959); " class="fa-solid fa-star-half-stroke "></i><br> 4,9 sur google
+                            </li>
+                            <li class="red ">
+                                <i class="fa-solid fa-circle-exclamation "></i> Pas de paiement par carte
+                            </li>
+                            <li>
+                                <img id="header-img " src="/images/cb-removebg-preview.png " alt="no bank card ">
+                            </li>
+                        </ul>
+                        <h4> Mentions Légales
+                        </h4>
+                        <ul>
+                            <li>
+                                <a href="mention.html ">
+                                Mentions Légales
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col ">
+                        <h4> Prestation
+                        </h4>
+                        <ul>
+                            <li>
+                                <a href="perso.html ">
+                                Massage personnalisé
+                                </a>
+                            </li>
+                            <li>
+                                <a href="suedoi.html ">
+                                Massage suédois
+                                </a>
+                            </li>
+                            <li>
+                                <a href="californien.html ">
+                                Massage Californien
+                                </a>
+                            </li>
+                            <li>
+                                <a href="hawaien.html ">
+                                Massage Hawaïen
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ayu.html ">
+                                Massage Ayurvédique
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pierre.html ">
+                                Massage aux pierres chaudes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="visage.html ">
+                                Massage visage
+                                </a>
+                            </li>
+                            <li>
+                                <a href="massage_sonore.html ">
+                                Massage sonore vibratoire
+                                </a>
+                            </li>
+                            <li>
+                                <a href="reflexologie.html ">
+                                Réflexologie faciale
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pressotherapie.html ">
+                                Pressothérapie
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col ">
+                        <h4> follow us
+                        </h4>
+                        <div class="social-links ">
+                            <a href="https://www.facebook.com/MassagesByKarine/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0 ">
+                                <i class="fab fa-facebook-f ">
+                                </i>
+                            </a>
+                            <a href="https://www.instagram.com/karine_massage_cabourg?igsh=M3IzMWtzeTdhOXAz ">
+                                <i class="fab fa-instagram ">
+                                </i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/karine-maitre-p%C3%A9tr%C3%A9-1288602b7/">
+                                <i class="fab fa-linkedin-in ">
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom ">
+                <p>©2024 Massage Cabourg - Massages bien-être by Karine.</p>
+            </div>
+        </footer>
+
+        <!----------------------------------------------- Fin Footer ------------------------------------------------------------>
+
+    </body>
+
+</html>
+
+</html>

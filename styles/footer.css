@@ -1,0 +1,140 @@
+h4 {
+    font-size: .8em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    margin: 0;
+    padding-top: 5%;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    /*background-color: #ffdab5;*/
+    background: rgb(227, 200, 174);
+    background: linear-gradient(90deg, rgba(227, 200, 174, 1) 20%, rgba(236, 186, 137, 1) 40%, rgba(236, 186, 137, 1) 60%, rgba(241, 204, 167, 1) 80%);
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 22%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #000000;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #335902;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #aa4c04;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #e35720;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #fdf4e3;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ed6e03;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.footer-col .red {
+    color: #e35720;
+}
+
+.footer-col li img {
+    width: 100%;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-bottom: 0;
+    /*padding: 20px 0;*/
+    /*background-color: #ffdab5; */
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #000000;
+}
+
+
+/******************************************** RESPONSIVE ********************************************************/
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}

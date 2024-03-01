@@ -1,0 +1,124 @@
+    @import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700');
+    * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        color: #090b08;
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        background-color: #ffdab5;
+    }
+    
+    h4 {
+        font-size: .8em;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #090b08;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    section {
+        padding: 5.8em 2em 0;
+    }
+    
+    .title {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-bottom: 1em;
+        font-family: "Kurale", serif;
+        font-size: 20px;
+    }
+    
+    .title.title-right {
+        justify-content: flex-end;
+    }
+    
+    .title.title-left span {
+        color: #9ec95d;
+    }
+    
+    .line {
+        width: 3em;
+        height: 2px;
+        background-color: #9ec95d;
+        margin-right: 1em;
+    }
+    
+    #video .text {
+        padding-top: 0;
+        margin-top: 0;
+        padding-bottom: 2em;
+    }
+    
+    #video {
+        background: rgb(227, 200, 174);
+        background: linear-gradient(90deg, rgba(227, 200, 174, 1) 20%, rgba(236, 186, 137, 1) 40%, rgba(236, 186, 137, 1) 60%, rgba(241, 204, 167, 1) 80%);
+    }
+    
+    section#video {
+        padding-bottom: 5.8em;
+    }
+    
+    #video .text {
+        padding-top: 0;
+        margin-top: 0;
+        padding-bottom: 2em;
+    }
+    
+    #video .text p {
+        padding-bottom: 0;
+        text-align: left;
+        font-size: 17px;
+    }
+    
+    #video .text p span {
+        color: rgba(206, 136, 6, 0.79);
+        text-decoration: solid;
+        font-weight: bold;
+    }
+    
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        overflow: hidden;
+        height: 0;
+    }
+    
+    @media(min-width: 1300px) {
+        /*  Global  */
+        .wrapper {
+            display: flex;
+        }
+        /*  Me Section  */
+        .text {
+            text-align: left;
+            margin: 0 0 auto 4em;
+        }
+    }
+    
+    @media(min-width: 992px) {
+        /*  Global  */
+        section {
+            padding: 5.8em 7em 0;
+        }
+        .title.title-left {
+            margin-left: -2.5em;
+        }
+        .line {
+            width: 5.5em;
+        }
+    }

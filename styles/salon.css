@@ -1,0 +1,380 @@
+   /*************************************** Font **************************************************************/
+   
+   @import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700');
+   @import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kurale&display=swap');
+   /*************************************** Global **************************************************************/
+   
+   * {
+       box-sizing: border-box;
+       scroll-behavior: smooth;
+   }
+   
+   body {
+       color: #090b08;
+       margin: 0;
+       font-family: 'Raleway', sans-serif;
+       font-weight: 300;
+       background-color: #ffdab5;
+   }
+   
+   h1 {
+       font-size: 1.7em;
+       font-weight: 800;
+       line-height: 1.5em;
+       font-family: "Dancing Script", cursive;
+       text-align: center;
+   }
+   
+   h2 {
+       text-transform: uppercase;
+       letter-spacing: 1px;
+       padding-bottom: 1em;
+       font-family: "Kurale", serif;
+       font-size: 25px;
+   }
+   
+   h4 {
+       font-size: .8em;
+       font-weight: 500;
+       text-transform: uppercase;
+       letter-spacing: 1px;
+   }
+   
+   h6 {
+       font-weight: 500;
+   }
+   
+   a {
+       text-decoration: none;
+       color: #090b08;
+   }
+   
+   ul {
+       list-style: none;
+   }
+   
+   section {
+       padding: 5.8em 2em 0;
+   }
+   
+   .title {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       text-transform: uppercase;
+       letter-spacing: 1px;
+       padding-bottom: 1em;
+       font-family: "Kurale", serif;
+       font-size: 20px;
+   }
+   
+   .container-bienfait {
+       position: relative;
+       z-index: 1;
+   }
+   
+   .section-header {
+       position: relative;
+       text-align: center;
+       margin-bottom: 20px;
+       z-index: 1;
+   }
+   
+   .section-header .section-title {
+       font-size: 35px;
+       text-transform: capitalize;
+       margin-bottom: 10px;
+   }
+   
+   .section-header .line {
+       display: block;
+       margin: 0px auto 70px auto;
+       height: 5px;
+       width: 60px;
+       background-color: #ffa861;
+   }
+   
+   .center-text {
+       text-align: center;
+   }
+   
+   .pd-y {
+       padding: 120px 0px;
+   }
+   
+   .about-content {
+       overflow: hidden;
+       display: flex;
+       justify-content: center;
+   }
+   
+   .icon-sun {
+       font-size: 30px;
+       color: orange;
+   }
+   
+   .icon-moon {
+       font-size: 30px;
+       color: rgb(225, 218, 218);
+   }
+   
+   @media only screen and (max-width: 576px) {
+       .container-bienfait {
+           width: 90%;
+       }
+   }
+   /******************************************* Page principal ******************************************************/
+   
+   .hero {
+       display: flex;
+       height: 100vh;
+       align-items: center;
+       background: rgb(243, 193, 125);
+       background: radial-gradient(circle, rgba(243, 193, 125, 1) 20%, rgba(255, 227, 160, 1) 36%, rgba(236, 186, 137, 1) 52%, rgba(245, 207, 170, 1) 73%);
+   }
+   
+   .hero-text {
+       padding: 0 2em 7.5em;
+   }
+   /* Me Section */
+   
+   #me .image img {
+       width: 100%;
+       margin-top: 10%;
+       margin-left: 5%;
+   }
+   
+   .text {
+       text-align: center;
+       padding-top: 0.5em;
+   }
+   
+   .text p {
+       text-align: justify;
+       line-height: 1.4em;
+   }
+   
+   .title.title-left span {
+       color: #9ec95d;
+   }
+   
+   #second {
+       width: 10%;
+       margin-left: 10%;
+       color: #9ec95d;
+   }
+   
+   #third {
+       width: 60%;
+       margin-top: 10%;
+       margin-left: 30%;
+   }
+   
+   .text strong {
+       color: #fb6f11;
+   }
+   
+    :root {
+       --primary-bg-color: #ffdab5;
+       --toggle-color: yellow;
+   }
+   
+   .jour,
+   .nuit {
+       display: none;
+       /* Hide both sections initially */
+   }
+   
+   body[data-theme='light'] .jour {
+       display: block;
+       /* Show day section when light theme */
+   }
+   
+   body[data-theme='dark'] .nuit {
+       display: block;
+       /* Show night section when dark theme */
+   }
+   
+   body[data-theme='dark'] .section-title {
+       color: white;
+       /* Blanc pour le titre en mode sombre */
+   }
+   
+   body[data-theme='dark'] .center-text {
+       color: white;
+       /* Blanc pour le titre en mode sombre */
+   }
+   
+   body[data-theme='dark'] {
+       --primary-bg-color: #3a3229;
+       --toggle-color: #bbb;
+       /* Couleur jaune pour le soleil */
+       /* ...other variables... */
+   }
+   
+   body {
+       background-color: var(--primary-bg-color);
+       color: var(--primary-text-color);
+       transition: background-color 0.5s ease;
+   }
+   
+   .button_mode {
+       font-size: 50px;
+       height: 30%;
+       margin: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   #theme-toggle {
+       text-decoration: none;
+       display: inline-block;
+   }
+   
+   .sun {
+       color: yellow;
+       /* Yellow color for sun */
+       animation: colorChange 1s forwards;
+       /* Animation for color change (1s duration) */
+   }
+   
+   .moon {
+       color: #bbb;
+       /* Light grey color for moon */
+       animation: colorChange 1s forwards;
+       /* Animation for color change (1s duration) */
+   }
+   
+   @keyframes colorChange {
+       from {
+           color: inherit;
+           /* Start with current color */
+       }
+       to {
+           color: var(--toggle-color);
+           /* End with target color */
+       }
+   }
+   
+   .sun,
+   .moon {
+       transition: transform 0.5s;
+       /* Transition for icon change */
+   }
+   
+   .sun.fa-sun {
+       transform: rotate(180deg);
+       /* No rotation for sun */
+   }
+   
+   .moon.fa-moon {
+       transform: rotate(360deg);
+       /* Rotate moon icon */
+   }
+   /******************************************** RESPONSIVE ********************************************************/
+   
+   @media(max-width: 574px) {
+       .description {
+           display: none;
+       }
+   }
+   
+   @media(max-width: 800px) {
+       .description {
+           display: none;
+       }
+       .box-title {
+           display: block;
+       }
+   }
+   
+   @media(min-width: 320px) {
+       .hero {
+           flex-direction: column-reverse;
+           justify-content: center;
+           padding-top: 20px;
+       }
+       .hero-img {
+           order: 2;
+       }
+       .hero-text {
+           order: 1;
+       }
+       .hero-img img {
+           display: block;
+           width: 16em;
+           height: auto;
+       }
+   }
+   
+   @media(min-width: 576px) {
+       /*  Global  */
+       h1 {
+           font-size: 2em;
+       }
+       /*  me Section  */
+       .text {
+           margin: 2em 2em auto;
+       }
+   }
+   
+   @media(min-width: 1300px) {
+       /*  Global  */
+       .wrapper {
+           display: flex;
+       }
+       /*  Me Section  */
+       .text {
+           text-align: left;
+           margin: 0 0 auto 4em;
+       }
+       #me .text {
+           flex: 1;
+           order: 1;
+       }
+       #me .image {
+           flex: 1 0 12em;
+           order: 2;
+       }
+   }
+   
+   @media(min-width: 992px) {
+       /*  Global  */
+       section {
+           padding: 5.8em 7em 0;
+       }
+       .title.title-left {
+           margin-left: -2.5em;
+       }
+       .title.title-right {
+           margin-right: -2.5em;
+       }
+       .line {
+           width: 5.5em;
+       }
+       /*  Me Section  */
+       #me .image {
+           margin-top: -2em;
+       }
+   }
+   
+   @media(min-width: 1200px) {
+       /*  Global  */
+       h1 {
+           font-size: 2.4em;
+       }
+       section {
+           padding: 5.8em 11em 0;
+       }
+       /*  Hero Section  */
+       .hero-img img {
+           width: 25.5em;
+           padding-bottom: 40px;
+       }
+       /*  Me Section  */
+       #me .image {
+           margin-top: -4em;
+       }
+   }

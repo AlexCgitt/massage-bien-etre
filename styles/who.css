@@ -1,0 +1,276 @@
+       /*************************************** Font **************************************************************/
+       
+       @import url('https://fonts.googleapis.com/css?family=Raleway:300,500,700');
+       @import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kurale&display=swap');
+       /*************************************** Global **************************************************************/
+       
+       * {
+           box-sizing: border-box;
+           scroll-behavior: smooth;
+       }
+       
+       body {
+           color: #090b08;
+           margin: 0;
+           font-family: 'Raleway', sans-serif;
+           font-weight: 300;
+           background-color: #ffdab5;
+       }
+       
+       h1 {
+           font-size: 1.7em;
+           font-weight: 800;
+           line-height: 1.5em;
+           font-family: "Dancing Script", cursive;
+           text-align: center;
+       }
+       
+       h2 {
+           text-transform: uppercase;
+       }
+       
+       h4 {
+           font-size: .8em;
+           font-weight: 500;
+           text-transform: uppercase;
+           letter-spacing: 1px;
+       }
+       
+       h6 {
+           font-weight: 500;
+       }
+       
+       a {
+           text-decoration: none;
+           color: #090b08;
+       }
+       
+       ul {
+           list-style: none;
+       }
+       
+       section {
+           padding: 5.8em 2em 0;
+       }
+       
+       .title {
+           display: flex;
+           align-items: center;
+           text-transform: uppercase;
+           letter-spacing: 1px;
+           padding-bottom: 1em;
+           font-family: "Kurale", serif;
+           font-size: 20px;
+       }
+       
+       .title.title-right {
+           justify-content: flex-end;
+       }
+       
+       .line {
+           width: 3em;
+           height: 2px;
+           background-color: #9ec95d;
+           margin-right: 1em;
+       }
+       
+       .line.line-right {
+           order: 2;
+           margin-right: 0;
+           margin-left: 1em;
+       }
+       /******************************************* Page principal ******************************************************/
+       
+       .hero {
+           display: flex;
+           height: 100vh;
+           align-items: center;
+           background: rgb(243, 193, 125);
+           background: radial-gradient(circle, rgba(243, 193, 125, 1) 20%, rgba(255, 227, 160, 1) 36%, rgba(236, 186, 137, 1) 52%, rgba(245, 207, 170, 1) 73%);
+       }
+       
+       .hero-text {
+           padding: 0 2em 7.5em;
+       }
+       /* Me Section */
+       
+       #me .image img {
+           width: 100%;
+           height: auto;
+           margin-top: 20%;
+           margin-left: 10%;
+       }
+       
+       .text {
+           text-align: center;
+           padding-top: 0.5em;
+       }
+       
+       .text p {
+           text-align: justify;
+           line-height: 1.4em;
+       }
+       
+       .title.title-left span {
+           color: #9ec95d;
+       }
+       
+       .text strong {
+           color: #fb6f11;
+       }
+
+       .image-center {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        margin-top: 20px; 
+        margin-bottom: 5%;
+    }
+    
+    .image-center img {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+     /******************************************** section presse ********************************************************/
+
+    section#press {
+        padding-bottom: 5.8em;
+    }
+    
+    #press .text {
+        padding-top: 0;
+        margin-top: 0;
+        padding-bottom: 2em;
+    }
+
+    #press {
+        display: flex; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+    
+    #press .image img {
+        max-width: 100%; 
+        height: auto; 
+        margin: 10px; 
+    }
+    
+    
+    
+       /******************************************** RESPONSIVE ********************************************************/
+       
+       @media(max-width: 574px) {
+           .description {
+               display: none;
+           }
+       }
+       
+       @media(max-width: 800px) {
+           .description {
+               display: none;
+           }
+           .box-title {
+               display: block;
+           }
+       }
+       
+       @media(min-width: 320px) {
+           .hero {
+               flex-direction: column-reverse;
+               justify-content: center;
+               padding-top: 20px;
+           }
+           .hero-img {
+               order: 2;
+           }
+           .hero-text {
+               order: 1;
+           }
+           .hero-img img {
+               display: block;
+               width: 16em;
+               height: auto;
+           }
+       }
+       
+       @media(min-width: 576px) {
+           /*  Global  */
+           h1 {
+               font-size: 2em;
+           }
+           /*  me Section  */
+           .text {
+               margin: 2em 2em auto;
+           }
+       }
+       
+       @media(min-width: 1300px) {
+           /*  Global  */
+           .wrapper {
+               display: flex;
+           }
+           /*  Me Section  */
+           .text {
+               text-align: left;
+               margin: 0 0 auto 4em;
+           }
+           #me .text {
+               flex: 1;
+               order: 1;
+           }
+           #me .image {
+               flex: 1 0 12em;
+               order: 2;
+           }
+       }
+       
+       @media(min-width: 992px) {
+           /*  Global  */
+           section {
+               padding: 5.8em 7em 0;
+           }
+           .title.title-left {
+               margin-left: -2.5em;
+           }
+           .title.title-right {
+               margin-right: -2.5em;
+           }
+           .line {
+               width: 5.5em;
+           }
+           /*  Me Section  */
+           #me .image {
+               margin-top: -2em;
+           }
+       }
+       
+       @media(min-width: 1200px) {
+           /*  Global  */
+           h1 {
+               font-size: 2.4em;
+           }
+           section {
+               padding: 5.8em 11em 0;
+           }
+           /*  Hero Section  */
+           .hero-img img {
+               width: 25.5em;
+               padding-bottom: 40px;
+           }
+           /*  Me Section  */
+           #me .image {
+               margin-top: -4em;
+           }
+       }
+       
+       @media (max-width: 1300px) {
+           #me .image img {
+               width: 100%;
+               height: auto;
+               margin-top: 0;
+               margin-left: 0;
+               /* Ajoutez cette ligne pour annuler la marge à gauche */
+           }
+       }
