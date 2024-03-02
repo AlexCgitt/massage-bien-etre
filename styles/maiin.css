@@ -133,9 +133,9 @@
        /******************************************* Me Section ********************************************************/
        
        #me .image img {
-           width: 100%;
+           width: 75%;
            height: auto;
-           margin-left: 10%;
+           margin-left: 20%;
            margin-top: 10%;
        }
        
