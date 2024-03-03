@@ -45,33 +45,6 @@ const offre_observer = new IntersectionObserver((entries) => {
 });
 offre_observer.observe(offre_elem);
 
-const text_elem = document.querySelector('#video .text');
-const text_observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animate_opacity');
-        } else {
-            entry.target.classList.remove('animate_opacity');
-        }
-    });
-}, {
-    threshold: 0.5
-});
-text_observer.observe(text_elem);
-
-const textmap_elem = document.querySelector('#where .text');
-const textmap_observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animate_opacity');
-        } else {
-            entry.target.classList.remove('animate_opacity');
-        }
-    });
-}, {
-    threshold: 0.5
-});
-textmap_observer.observe(textmap_elem);
 
 const text_elem2 = document.querySelector('#me .text');
 const text_observer2 = new IntersectionObserver((entries) => {
@@ -88,6 +61,7 @@ const text_observer2 = new IntersectionObserver((entries) => {
 text_observer2.observe(text_elem2);
 
 const img_elem = document.querySelector('#me .image');
+console.log(img_elem);
 const img_observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
