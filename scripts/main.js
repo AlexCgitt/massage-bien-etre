@@ -61,7 +61,6 @@ const text_observer2 = new IntersectionObserver((entries) => {
 text_observer2.observe(text_elem2);
 
 const img_elem = document.querySelector('#me .image');
-console.log(img_elem);
 const img_observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
