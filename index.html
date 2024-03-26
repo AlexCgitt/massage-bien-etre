@@ -68,11 +68,12 @@
         <input type="checkbox" id="toggle-menu" role="button" aria-pressed="true">
         <label for="toggle-menu" class="toggle-menu">Menu</label>
 
-        <!--  Menus  -->
+        <!--  Menus de navigation -->
         <nav id="nav-bar" class="navbar">
             <ul class="menu">
-                <!--<li><a class="nav-link" href="who.html">Qui suis-je</a></li>-->
+                <!-- Menu Massage -->
                 <li><a class="nav-link" href="massage.html">Massage</a>
+                    <!-- Sous-menu de Massage -->
                     <ul class="submenu">
                         <li><a href="perso.html">Personnalisé</a></li>
                         <li><a href="suedoi.html">Suédois</a></li>
@@ -83,16 +84,20 @@
                         <li><a href="visage.html">Visage</a></li>
                     </ul>
                 </li>
-
-                <li><a class="nav-link" href="autre.html">Autre Massages</a>
+                <!-- Menu Autres Massages -->
+                <li><a class="nav-link" href="autre.html">Autres Massages</a>
                     <ul class="submenu">
+                        <!-- Sous-menu de Autres Massages -->
                         <li><a href="sonores.html">Sonore</a></li>
                         <li><a href="reflexologie.html">Réflexologie faciale</a></li>
                         <li><a href="pressotherapie.html">Pressothérapie</a></li>
                     </ul>
                 </li>
+                <!-- Menu Cabinet -->
                 <li><a class="nav-link" href="salon.html">Mon Cabinet</a></li>
+                <!-- Menu Tarifs -->
                 <li><a class="nav-link" href="tarif.html">Tarifs</a></li>
+                <!-- Menu Contact / plan -->
                 <li><a class="nav-link" href="contact.html">Contact / plan</a></li>
                 <li><i class="fa-solid fa-phone"></i> 06 60 84 11 47
                 </li>
@@ -102,12 +107,13 @@
             <ul class="social-menu">
                 <li>
                     <a href="https://www.facebook.com/MassagesByKarine/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0"><i class="fab fa-facebook-f">
-                </i></a>
+            </i></a>
                 </li>
                 <li><a href="https://www.instagram.com/karine_massage_cabourg?igsh=M3IzMWtzeTdhOXAz"><i class="fab fa-instagram">
-                </i></a></li>
+            </i></a></li>
                 <li><a href="https://www.linkedin.com/in/karine-maitre-p%C3%A9tr%C3%A9-1288602b7/"><i class="fab fa-linkedin">
-                </i></a></li>
+            <!--pour le linkedin dès qu'il est crée n'hésitez pas à le mettre -->
+            </i></a></li>
             </ul>
         </nav>
     </header>
@@ -129,27 +135,39 @@
     <!---------------------------------------- Qui suis-je ? ---------------------------------------------------------->
 
     <section id="me">
+        <!-- En-tête de la section -->
         <div class="title title-left">
+            <!-- Ligne décorative -->
             <span class="line"></span>
+            <!-- Titre de la section -->
             <h3>Un moment de détente dans un cadre zen </h3>
+            <!-- Icône de spa -->
             <span class="material-symbols-outlined">spa</span>
         </div>
+        <!-- Contenu de la section -->
         <div class="wrapper">
+            <!-- Image -->
             <div class="image animation_img">
-                <!-- Pour changer la photo du qui suis-je, changer src -->
+                <!-- Image de Karine -->
+                <!-- Pour changer l'image, modifiez l'attribut src -->
                 <img src="images/Karine.png" alt="karine">
             </div>
+            <!-- Texte -->
             <div id="text" class="text animation_text">
+                <!-- Titre -->
                 <h2>Karine : qui suis je</h2>
+                <!-- Description -->
                 <p>Praticienne <strong>diplômée</strong>, formée par un masseur-kinésithérapeute, installée depuis 2006 à Cabourg, <strong>remarquée par la presse, ma spécialité : le massage personnalisé</strong></p><br>
                 <p>Je vous recevrais dans un <strong>cadre zen, chauffé à 25° toute l’année, en musique, sur une table professionnelle chauffante.</strong></p><br>
                 <p>Mes massages sont pratiqués exclusivement avec des <strong>Huiles végétales et essentielles bio</strong></p>
+                <!-- Lien vers la page "who" pour en savoir plus -->
                 <br>
                 <a href="who.html"><span class="arrow">&rarr;</span>  En savoir plus</a><br>
                 <p> </p>
             </div>
         </div>
     </section>
+    
 
     <!---------------------------------------- Fin Qui suis-je ? ------------------------------------------------------>
 
@@ -159,29 +177,37 @@
 
 
     <section id="video">
+        <!-- En-tête de la section "Vidéo découverte" -->
         <div class="title title-left">
+            <!-- Ligne décorative -->
             <span class="line"></span>
+            <!-- Titre de la section -->
             <h3>Vidéo découverte</h3>
         </div>
+        <!-- Contenu de la section -->
         <div class="wrapper">
-
+            <!-- Conteneur de la vidéo -->
             <div id="player" class="video-wrapper animation_video">
-
-                <!-- Changez href pour changer la vidéo (lien youtube)-->
-
+                <!-- Lien de la vidéo YouTube -->
+                <!-- Changez href pour changer la vidéo (lien youtube) -->
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/0ZNofV4STkc?si=lKAeCDFXblrd4pls" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
+        <!-- Section "Offre du moment" -->
         <section id="offre">
+            <!-- En-tête de la section "Offre du moment" -->
             <div class="title title-center">
+                <!-- Titre de la section -->
                 <h3>Offre du moment</h3>
             </div>
+            <!-- Contenu de la section -->
             <div class="center-img animation_video">
+                <!-- Image de l'offre du moment -->
                 <img src="images/offre.jpg" alt="offre du moment">
             </div>
         </section>
-
     </section>
+    
 
 
 

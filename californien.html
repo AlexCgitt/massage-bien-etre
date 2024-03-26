@@ -40,75 +40,79 @@
 <!---------------------------------------- Nav bar -------------------------------------------------------->
 
 <body>
-
-    <div class="body-loading">
-        <div class="load-img">
-            <img src="images/Logo_Karine.png" alt="logo">
+    <!-- Début de la barre de navigation -->
+        <div class="body-loading">
+             <!-- Logo de chargement -->
+            <div class="load-img">
+                <img src="images/Logo_Karine.png" alt="logo">
+            </div>
+            <div class="loading">
+                <!-- Animation de chargement -->
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
         </div>
-        <div class="loading">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-    </div>
-
-    <header id="header">
-        <a class="nav-brand" href="index.html">
-            <img id="header-img" src="/images/Logo_Sans_texte.png" alt="logo">
-        </a>
-
-        <!-- Menu for Mobile -->
-
-        <input type="checkbox" id="toggle-menu" role="button" aria-pressed="true">
-        <label for="toggle-menu" class="toggle-menu">Menu</label>
-
-        <!--  Menus  -->
-        <nav id="nav-bar" class="navbar">
-            <ul class="menu">
-                <li><a class="nav-link" href="massage.html">Massage</a>
-                    <ul class="submenu">
-                        <li><a href="perso.html">Personnalisé</a></li>
-                        <li><a href="suedoi.html">Suédois</a></li>
-                        <li><a href="californien.html">Californien</a></li>
-                        <li><a href="hawaien.html">Hawaïen "Lomi Lomi"</a></li>
-                        <li><a href="ayu.html">Ayurvédique "Abhyanga"</a></li>
-                        <li><a href="pierre.html">Aux pierres chaudes</a></li>
-                        <li><a href="visage.html">Visage</a></li>
-                    </ul>
-                </li>
-
-                <li><a class="nav-link" href="autre.html">Autres Massages</a>
-                    <ul class="submenu">
-                        <li>
-                            <a href="sonores.html">
-                        Sonore</a>
-                        </li>
-                        <li><a href="reflexologie.html">Réflexologie faciale</a></li>
-                        <li><a href="pressotherapie.html">Pressothérapie</a></li>
-
-                    </ul>
-                </li>
-                <li><a class="nav-link" href="salon.html">Mon Cabinet</a></li>
-
-                <li><a class="nav-link" href="tarif.html">Tarifs</a></li>
-                <li><a class="nav-link" href="contact.html">Contact / plan</a></li>
-                <li><i class="fa-solid fa-phone"></i> 06 60 84 11 47
-                </li>
-            </ul>
-
-            <!-- Si changement de compte fb, insta, linkedin changer les liens dans les href -->
-            <ul class="social-menu">
-                <li>
-                    <a href="https://www.facebook.com/MassagesByKarine/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0"><i class="fab fa-facebook-f">
-            </i></a>
-                </li>
-                <li><a href="https://www.instagram.com/karine_massage_cabourg?igsh=M3IzMWtzeTdhOXAz"><i class="fab fa-instagram">
-            </i></a></li>
-                <li><a href="https://www.linkedin.com/in/karine-maitre-p%C3%A9tr%C3%A9-1288602b7/"><i class="fab fa-linkedin">
-            </i></a></li>
-            </ul>
-        </nav>
-    </header>
+         <!-- En-tête du site -->
+        <header id="header">
+            <a class="nav-brand" href="index.html">
+                <img id="header-img" src="/images/Logo_Sans_texte.png" alt="logo">
+            </a>
+    
+            <!-- Menu for Mobile -->
+    
+            <input type="checkbox" id="toggle-menu" role="button" aria-pressed="true">
+            <label for="toggle-menu" class="toggle-menu">Menu</label>
+    
+            <!--  Menus de navigation -->
+            <nav id="nav-bar" class="navbar">
+                <ul class="menu">
+                    <!-- Menu Massage -->
+                    <li><a class="nav-link" href="massage.html">Massage</a>
+                        <!-- Sous-menu de Massage -->
+                        <ul class="submenu">
+                            <li><a href="perso.html">Personnalisé</a></li>
+                            <li><a href="suedoi.html">Suédois</a></li>
+                            <li><a href="californien.html">Californien</a></li>
+                            <li><a href="hawaien.html">Hawaïen "Lomi Lomi"</a></li>
+                            <li><a href="ayu.html">Ayurvédique "Abhyanga"</a></li>
+                            <li><a href="pierre.html">Aux pierres chaudes</a></li>
+                            <li><a href="visage.html">Visage</a></li>
+                        </ul>
+                    </li>
+                    <!-- Menu Autres Massages -->
+                    <li><a class="nav-link" href="autre.html">Autres Massages</a>
+                        <ul class="submenu">
+                            <!-- Sous-menu de Autres Massages -->
+                            <li><a href="sonores.html">Sonore</a></li>
+                            <li><a href="reflexologie.html">Réflexologie faciale</a></li>
+                            <li><a href="pressotherapie.html">Pressothérapie</a></li>
+                        </ul>
+                    </li>
+                    <!-- Menu Cabinet -->
+                    <li><a class="nav-link" href="salon.html">Mon Cabinet</a></li>
+                    <!-- Menu Tarifs -->
+                    <li><a class="nav-link" href="tarif.html">Tarifs</a></li>
+                    <!-- Menu Contact / plan -->
+                    <li><a class="nav-link" href="contact.html">Contact / plan</a></li>
+                    <li><i class="fa-solid fa-phone"></i> 06 60 84 11 47
+                    </li>
+                </ul>
+    
+                <!-- Si changement de compte fb, insta, linkedin changer les liens dans les href -->
+                <ul class="social-menu">
+                    <li>
+                        <a href="https://www.facebook.com/MassagesByKarine/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0"><i class="fab fa-facebook-f">
+                </i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/karine_massage_cabourg?igsh=M3IzMWtzeTdhOXAz"><i class="fab fa-instagram">
+                </i></a></li>
+                    <li><a href="https://www.linkedin.com/in/karine-maitre-p%C3%A9tr%C3%A9-1288602b7/"><i class="fab fa-linkedin">
+                <!--pour le linkedin dès qu'il est crée n'hésitez pas à le mettre -->
+                </i></a></li>
+                </ul>
+            </nav>
+        </header>
 
     <!---------------------------------------- Fin Nav bar -------------------------------------------------------->
 
@@ -116,6 +120,7 @@
     <section id="me">
         <div class="title title-left">
             <span class="line"></span>
+            <!--Titre du massage-->
             <h3>Massage californien</h3>
         </div>
         <div class="wrapper">
@@ -124,6 +129,7 @@
                 <img src="images/massagecalifornien.jpg" alt="massage caliorien">
             </div>
             <!-- A mettre ici le texte pour la description des massages-->
+            <!--Les br servent à rajouter des espaces entre les lignes-->
             <div class="text">
                 <p>C'est un massage de relaxation et de bien-être du corps, à base de longs mouvements fluides et harmonieux, pétrissages, pressions glissées et effleurages.</p><br>
                 <p>
@@ -143,41 +149,48 @@
 
     <section id="selection-massage">
         <div class="about pd-y">
+            <!-- En-tête de la section -->
             <div class="section-header">
+                <!-- Titre de la section -->
                 <h2 class="section-title">Les Bienfaits</h2>
+                <!-- Ligne décorative -->
                 <span class="line"></span>
             </div>
+            <!-- Contenu des bienfaits -->
             <div class="container-bienfait">
                 <div class="about-content">
+                    <!-- Premier élément de bienfait -->
                     <div class="about-item">
+                        <!-- Icône représentant le bienfait -->
                         <img src="https://cdn-icons-png.flaticon.com/128/14897/14897945.png" alt="massage">
+                        <!-- Titre du bienfait -->
                         <h2 class="about-item-title">
                             élimine les toxines
                         </h2>
-
-
                     </div>
+                    <!-- Deuxième élément de bienfait -->
                     <div class="about-item">
+                        <!-- Icône représentant le bienfait -->
                         <img src="https://cdn-icons-png.flaticon.com/128/3048/3048398.png" alt="Massage">
+                        <!-- Titre du bienfait -->
                         <h2 class="about-item-title">
                             relaxant
                         </h2>
-
-
-
                     </div>
+                    <!-- Troisième élément de bienfait -->
                     <div class="about-item">
+                        <!-- Icône représentant le bienfait -->
                         <img src="https://cdn-icons-png.flaticon.com/128/10914/10914232.png" alt="Massage">
+                        <!-- Titre du bienfait -->
                         <h2 class="about-item-title">
                             Paix intérieure et extérieure
                         </h2>
-
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
+    
 
     <!---------------------------------------- Fin section selection massage-------------------------------------------------------->
 
